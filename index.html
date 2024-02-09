@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spoticlayer - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/utility.css">
+</head>
+
+<body>
+    <div class="container flex bg-black">
+        <div class="left border">
+            <div class="home bg-gray rounded margin m-1">
+                <div class="logo">
+                    <img class="spotify-logo invert" src="./logo/logo.png" alt="logo">
+                    <img class="close invert" src="./svg/cross.svg" alt="close">
+                </div>
+                <div class="creator">Made with ❤️ by Naitik</div>
+                <ul>
+                    <li><img class="invert" src="./svg/home.svg" alt="home"><span>
+                            <h4>Home</h4>
+                        </span></li>
+                    <li>
+                        <div class="search-container">
+                            <button id="searchButton"><img class="invert search-btn" src="./svg/search.svg"
+                                    alt="search"></button>
+                            <input type="text" id="searchInput" placeholder="Search...">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="library rounded bg-gray p-1 margin">
+                <div class="lib">
+                    <div class="heading">
+                        <img class="invert" src="./svg/library.svg" alt="library">
+                        <h2>
+                            Your library
+                        </h2>
+                    </div>
+                    <div class="auto">
+                        <label for="toggleAutoplay" class="autoplay-label">Autoplay</label>
+                        <label class="switch">
+                            <input type="checkbox" id="toggleAutoplay">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="songList">
+                    <ul>
+                        <li>
+                            <div class="musicList">
+                                <img class="invert" src="./svg/music.svg" alt="music">
+                                <div class="songName">
+                                    Song Name
+                                </div>
+                            </div>
+                            <div class="playNow">
+                                <span>Play now</span>
+                                <img class="invert" src="./svg/play.svg" alt="play">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer">
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/" id="" data-encore-id="textLink"
+                            previewlistener="true">
+                            <span data-encore-id="type">Legal</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/privacy/" id="" data-encore-id="textLink"
+                            previewlistener="true">
+                            <span data-encore-id="type">Privacy Center</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/privacy-policy/" id="" data-encore-id="textLink"
+                            previewlistener="true">
+                            <span data-encore-id="type">Privacy Policy</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/cookies-policy/" id="" data-encore-id="textLink"
+                            previewlistener="true">
+                            <span data-encore-id="type">Cookies</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3" id=""
+                            data-encore-id="textLink">
+                            <span data-encore-id="type">About Ads</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/accessibility/" id="" data-encore-id="textLink"
+                            previewlistener="true">
+                            <span data-encore-id="type">Accessibility</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a draggable="false" href="https://www.spotify.com/legal/cookies-policy/" target="_blank"
+                            rel="noopener" previewlistener="true">
+                            <span data-encore-id="text">Cookies</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right border bg-black">
+            <div class="header">
+                <div class="nav">
+                    <img class="hamburger invert" src="./svg/hamburger.svg" alt="hamburger menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M15 6C15 6 9.00001 10.4189 9 12C8.99999 13.5812 15 18 15 18" stroke="#ffffff"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18" stroke="#ffffff"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <div class="buttons">
+                    <button class="signup">Sign up</button>
+                    <button class="login">Log in</button>
+                </div>
+            </div>
+            <div class="playlists">
+                <h1>Spotify Playlists</h1>
+                <div class="cardContainer">
+                    <div data-folder="cs" class="card">
+                        <div class="play">
+                            <img src="./svg/play-card.svg" alt="play">
+                        </div>
+                        <img src="./images/fav.jpg" alt="fav">
+                        <h4>Favourites</h4>
+                        <p>Some of my favourite music for you</p>
+                    </div>
+                    <div data-folder="srk" class="card">
+                        <div class="play">
+                            <img src="./svg/play-card.svg" alt="play">
+                        </div>
+                        <img src="./images/srk.jpg" alt="srk">
+                        <h4>Shah Rukh Khan</h4>
+                        <p>Collection of bollywood king SRK</p>
+                    </div>
+                    <div data-folder="kk" class="card">
+                        <div class="play">
+                            <img src="./svg/play-card.svg" alt="play">
+                        </div>
+                        <img src="./images/kk.jpg" alt="kk">
+                        <h4>KK</h4>
+                        <p>Hear the hits of legendary singer KK</p>
+                    </div>
+                    <div data-folder="arijit" class="card">
+                        <div class="play">
+                            <img src="./svg/play-card.svg" alt="play">
+                        </div>
+                        <img src="./images/arijit.jpg" alt="arijit">
+                        <h4>Arijit Singh</h4>
+                        <p>Rhythm your mind with recent hits</p>
+                    </div>
+                    <div data-folder="phonk" class="card">
+                        <div class="play">
+                            <img src="./svg/play-card.svg" alt="play">
+                        </div>
+                        <img src="./images/phonk.jpg" alt="phonk">
+                        <h4>Phonk</h4>
+                        <p>Gym phonk for ultimate powerful workout</p>
+                    </div>
+                    <div data-folder="atif" class="card">
+                        <div class="play">
+                            <img src="./svg/play-card.svg" alt="play">
+                        </div>
+                        <img src="./images/atif.jpg" alt="atif">
+                        <h4>Atif Aslam</h4>
+                        <p>Aggregate of the hits of Atif Aslam</p>
+                    </div>
+                    <div data-folder="bol-instru" class="card">
+                        <div class="play">
+                            <img src="./svg/play-card.svg" alt="play">
+                        </div>
+                        <img src="./images/bollywood-instrumental.jpeg" alt="bol-instru">
+                        <h4>Instrumental</h4>
+                        <p>Hear the bollywood instrumental version</p>
+                    </div>
+                    <div data-folder="kishore kumar" class="card">
+                        <div class="play">
+                            <img src="./svg/play-card.svg" alt="play">
+                        </div>
+                        <img src="./images/kishore-kumar.jpeg" alt="kishore-kuamr">
+                        <h4>Kishore Kumar</h4>
+                        <p>Hits of the immortal Kishore Kumar</p>
+                    </div>
+                    <div data-folder="manna dey" class="card">
+                        <div class="play">
+                            <img src="./svg/play-card.svg" alt="play">
+                        </div>
+                        <img src="./images/manna-dey.jpeg" alt="manna-dey">
+                        <h4>Manna Dey</h4>
+                        <p>Hear the evergreen hits of Manna Dey</p>
+                    </div>
+                    <div data-folder="rs-instru" class="card">
+                        <div class="play">
+                            <img src="./svg/play-card.svg" alt="play">
+                        </div>
+                        <img src="./images/rs-instru.jpeg" alt="rs-instru">
+                        <h4>Sounds of Tagore</h4>
+                        <p>Melodious instrumental verison of Tagore's</p>
+                    </div>
+                    <div data-folder="ed" class="card">
+                        <div class="play">
+                            <img src="./svg/play-card.svg" alt="play">
+                        </div>
+                        <img src="./images/ed.jpeg" alt="ed">
+                        <h4>Ed Shreeran</h4>
+                        <p>Dance with the beats of Ed Shreeran</p>
+                    </div>
+                    <div data-folder="party" class="card">
+                        <div class="play">
+                            <img src="./svg/play-card.svg" alt="play">
+                        </div>
+                        <img src="./images/party.jpeg" alt="party">
+                        <h4>Party Mix</h4>
+                        <p>Enjoy your parties with the rythms of these</p>
+                    </div>
+                    <div data-folder="punjabi" class="card">
+                        <div class="play">
+                            <img src="./svg/play-card.svg" alt="play">
+                        </div>
+                        <img src="./images/punjabi.jpeg" alt="punjabi">
+                        <h4>Punjabi Hits</h4>
+                        <p>Have a great bhangra time with this mix</p>
+                    </div>
+                    <div data-folder="rs" class="card">
+                        <div class="play">
+                            <img src="./svg/play-card.svg" alt="play">
+                        </div>
+                        <img src="./images/rs.jpeg" alt="rs">
+                        <div class="play">
+                            <img src="./svg/play-card.svg" alt="play">
+                        </div>
+                        <h4>Rabindra Sangeet</h4>
+                        <p>Remember Tagore's musical masterstrokes</p>
+                    </div>
+                    <div data-folder="old" class="card">
+                        <div class="play">
+                            <img src="./svg/play-card.svg" alt="play">
+                        </div>
+                        <img src="./images/old.jpeg" alt="old">
+                        <h4>Old is gold</h4>
+                        <p>Enjoy the old times with these 70s & 80s</p>
+                    </div>
+                </div>
+                <div class="player invert">
+                    <div class="seekbar">
+                        <div class="circle">
+                        </div>
+                    </div>
+                    <div class="abovebar">
+                        <div class="songinfo invert">
+                        </div>
+                        <div class="songButtons">
+                            <img id="previous" src="./svg/prev.svg" alt="previous">
+                            <img id="playButton" src="./svg/play.svg" alt="play">
+                            <img id="next" src="./svg/next.svg" alt="next">
+                        </div>
+                        <div class="timevol">
+                            <div class="songtime invert">
+                            </div>
+                            <div class="volume">
+                                <img id="volume-icon" src="./svg/volume.svg" alt="volume">
+                                <div class="range">
+                                    <input type="range">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
