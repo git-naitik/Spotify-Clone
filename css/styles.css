@@ -519,7 +519,7 @@ input:checked+.slider:before {
     padding: 0px 1px 1px 0px;
 }
 
-@media (max-width:1400px) {
+@media (max-width:1200px) {
 
     body{
         overflow-y: hidden ;
