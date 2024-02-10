@@ -397,10 +397,11 @@ html, body {
 }
 
 .timevol {
+    width: fit-content;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 25px;
+    gap: 30px;
 }
 
 .volume {
