@@ -261,14 +261,12 @@ html, body {
 
 .player {
     position: sticky;
-    bottom: 1.5px;
     background-color: #dad5d5;
     width: 70vw;
     padding: 30px 10px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    gap: 17px;
     margin-bottom: 1.8px;
     border-radius: 10px;
 }
@@ -558,6 +556,10 @@ input:checked+.slider:before {
     .player {
         width: 94vw;
         padding: 25px 9px;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        gap: 17px;
     }
 
     .hamburger {
