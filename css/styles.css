@@ -399,7 +399,7 @@ html, body {
 .timevol {
     width: fit-content;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     gap: 30px;
 }
