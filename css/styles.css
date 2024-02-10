@@ -7,9 +7,9 @@
 html, body {
     margin: 0;
     padding: 2px;
-    height: 100%; /* Ensure the body takes the full height */
+    height: 100%;
     overflow: hidden;
-    background: black; /* Prevent scrolling on the body */
+    background: black;
     box-sizing: border-box;
 }
 
@@ -20,22 +20,22 @@ html, body {
 }
 
 .left, .right {
-    height: 100vh; /* Match the viewport height */
-    overflow-y: auto; /* Enable vertical scrolling if content overflows */
+    height: 100vh;
+    overflow-y: auto;
 }
 
 .left {
-    width: 25vw; /* Adjust based on your layout preference */
-    position: fixed; /* Keep it fixed to the side */
-    top: 0; /* Align to the top */
-    left: 0; /* Align to the left */
+    width: 25vw;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 .right {
-    margin: 2px ; /* Align to the top */
-    width: 74.4vw; /* Adjust based on your layout preference */
-    margin-left: 25vw; /* Offset by the width of the left div */
-    position: absolute; /* Position it next to the left div */
+    margin: 2px ;
+    width: 74.4vw;
+    margin-left: 25vw;
+    position: absolute;
 }
 
 
