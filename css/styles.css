@@ -474,7 +474,7 @@ input:checked+.slider:before {
 }
 
 #searchInput {
-    width: 17vw;
+    width: 16.5vw;
     padding: 5px 10px;
     border-radius: 25px;
     font-size: 14px;
