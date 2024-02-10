@@ -397,11 +397,13 @@ html, body {
 }
 
 .timevol {
-    width: fit-content;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    gap: 30px;
+    gap: 25px;
+}
+
+.timevol > *{
+    padding: 0px 10px;
 }
 
 .volume {
@@ -591,7 +593,7 @@ input:checked+.slider:before {
     .abovebar {
         display: flex;
         align-items: center;
-        gap: 7vw;
+        gap: 6vw;
     }
 
     .library {
@@ -701,6 +703,10 @@ input:checked+.slider:before {
         justify-content: center;
         align-items: center;
         gap: 11px;
+    }
+
+    .timevol > *{
+        padding: 0px;
     }
 
     .header .signup{
