@@ -403,7 +403,7 @@ html, body {
 }
 
 .timevol > *{
-    padding: 0px 10px;
+    padding: 0px 11px;
 }
 
 .volume {
@@ -474,7 +474,7 @@ input:checked+.slider:before {
 }
 
 #searchInput {
-    width: 200px;
+    width: 17vw;
     padding: 5px 10px;
     border-radius: 25px;
     font-size: 14px;
@@ -556,6 +556,10 @@ input:checked+.slider:before {
     .right {
         width: 100vw;
         margin-left: 0px
+    }
+
+    #searchInput {
+        width: 205px;
     }
 
     .player {
